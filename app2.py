@@ -12,6 +12,36 @@ from PIL import Image
 # Helper Functions (SAFE)
 # ---------------------------------------------------------
 
+# Inject navy blue background color
+st.markdown(
+    """
+    <style>
+        .stApp {
+            background-color: #66788b;  /* Navy blue */
+        }
+
+        .stSidebar {
+            background-color: #001a35 !important;  /* Slightly darker navy for sidebar */
+        }
+
+        h1, h2, h3, h4, h5, h6, p, label, .stMarkdown, .css-1cpxqw2 {
+            color: white; /* Text color for visibility on navy */
+        }
+
+        .stDownloadButton button, .stButton button {
+            background-color: #0074D9;
+            color: white;
+            border: none;
+        }
+
+        .stDownloadButton button:hover, .stButton button:hover {
+            background-color: #005fa3;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 def extract_colors_from_css(css_text):
     """Extract valid HEX and RGB colors from CSS safely."""
     raw_hex = re.findall(r'#[0-9A-Fa-f]{1,6}', css_text)
@@ -276,4 +306,5 @@ with tab2:
                         """,
                         unsafe_allow_html=True
                     )
+
 
