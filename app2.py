@@ -29,7 +29,7 @@ st.markdown(
         }
 
         .stDownloadButton button, .stButton button {
-            background-color: #0074D9;
+            background-color: #0054a3;
             color: white;
             border: none;
         }
@@ -237,13 +237,13 @@ with tab1:
             st.metric("Digital Carbon Emission Score (%)", f"{score:.1f}%")
 
             if score < 25:
-                st.success("🟢 Very Low Carbon")
+                st.success("Very Low Carbon")
             elif score < 50:
-                st.info("🟡 Moderate")
+                st.info("Moderate")
             elif score < 75:
-                st.warning("🟠 High")
+                st.warning("High")
             else:
-                st.error("🔴 Very High")
+                st.error("Very High")
 
             st.dataframe(df)
             st.bar_chart(df.set_index("color"))
@@ -282,13 +282,13 @@ with tab2:
             st.metric("Image Carbon Emission Score (%)", f"{score:.1f}%")
 
             if score < 25:
-                st.success("🟢 Very Low Carbon")
+                st.success("Very Low Carbon")
             elif score < 50:
-                st.info("🟡 Moderate")
+                st.info("Moderate")
             elif score < 75:
-                st.warning("🟠 High")
+                st.warning("High")
             else:
-                st.error("🔴 Very High")
+                st.error("Very High")
 
             st.dataframe(df)
             st.bar_chart(df.set_index("color"))
@@ -306,6 +306,7 @@ with tab2:
                         """,
                         unsafe_allow_html=True
                     )
+
 
 
 
