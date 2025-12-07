@@ -179,7 +179,7 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("🌿 Digital Carbon Emission Calculator")
+st.title("Digital Carbon Emission Calculator")
 st.write("Analyze carbon intensity from **websites** or **uploaded images**.")
 
 # ---------------------------------------------------------
@@ -276,3 +276,4 @@ with tab2:
                         """,
                         unsafe_allow_html=True
                     )
+
