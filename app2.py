@@ -17,11 +17,11 @@ st.markdown(
     """
     <style>
         .stApp {
-            background-color: #008080;  /* Teal */
+            background-color: #000000;  /* black */
         }
 
         .stSidebar {
-            background-color: #8ee8e8 !important;  /* Slightly darker navy for sidebar */
+            background-color: #111111 !important;  /* Slightly gray for sidebar */
         }
 
         h1, h2, h3, h4, h5, h6, p, label, .stMarkdown, .css-1cpxqw2 {
@@ -29,13 +29,13 @@ st.markdown(
         }
 
         .stDownloadButton button, .stButton button {
-            background-color: #0054a3;
+            background-color: #222222;
             color: white;
             border: none;
         }
 
         .stDownloadButton button:hover, .stButton button:hover {
-            background-color: #005fa3;
+            background-color: #333333;
         }
     </style>
     """,
@@ -306,6 +306,7 @@ with tab2:
                         """,
                         unsafe_allow_html=True
                     )
+
 
 
 
