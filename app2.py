@@ -17,11 +17,11 @@ st.markdown(
     """
     <style>
         .stApp {
-            background-color: #66788b;  /* Navy blue */
+            background-color: #008080;  /* Teal */
         }
 
         .stSidebar {
-            background-color: #001a35 !important;  /* Slightly darker navy for sidebar */
+            background-color: #8ee8e8 !important;  /* Slightly darker navy for sidebar */
         }
 
         h1, h2, h3, h4, h5, h6, p, label, .stMarkdown, .css-1cpxqw2 {
@@ -306,5 +306,6 @@ with tab2:
                         """,
                         unsafe_allow_html=True
                     )
+
 
 
